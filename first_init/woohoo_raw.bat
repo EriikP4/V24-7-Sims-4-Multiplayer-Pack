@@ -34,6 +34,7 @@
 ::978f952a14a936cc963da21a135fa983
 @echo off
 chcp 65001>NUL
+setlocal enabledelayedexpansion
 IF EXIST "UPDATER_DATA" (
     GOTO UPDATER
 ) ELSE (
@@ -60,7 +61,7 @@ echo Descomprimiendo librerías...
 7za.exe x -y fullpack.7z
 7za.exe x -y update1.7z
 7za.exe x -y update2.7z
-echo v2 > "%USERPROFILE%\Electronic Arts\Los Sims 4\mod_version.txt"
+echo v2 > "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 del fullpack.7z
 del update1.7z
 del update2.7z
@@ -72,8 +73,11 @@ goto UPDATER
 :UPDATER
 cls
 echo Obteniendo versiones...
+set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
+set /p version=<%version_path%
 wget --quiet --no-check-certificate "updater url here" -O updater.bat
 wget --quiet --no-check-certificate "version url here" -O version.txt
 echo Actualizador iniciado
 start /wait updater.exe
+del updater.exe
 exit

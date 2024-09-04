@@ -1,6 +1,6 @@
 ::[Bat To Exe Converter]
 ::
-::YAwzoRdxOk+EWAnk
+::YAwzoRdxOk+EWAjk
 ::fBw5plQjdG8=
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
@@ -32,27 +32,7 @@
 ::978f952a14a936cc963da21a135fa983
 @echo off
 chcp 65001>NUL
-setlocal enabledelayedexpansion
-set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
-set /p version=<%version_path%
-set /p cloud=version.txt
-REM NO UPDATES
-if "%version%"=="v2" (
-    echo Estás al día.
-    echo Pulsa cualquier tecla para salir...
-    pause >nul
-    exit
-)
-
-REM V2 -> latest
-if "%version%"=="v2" (
-    set update_link=
-    set update_name=
-    pause >nul
-    exit
-)
-echo Versión actual: %version%
-echo Versión en la nube: %cloud%
-echo ---
-echo Pulsa cualquier tecla para actualizar...
-pause
+echo WooHoo está actualizado.
+echo Pulsa ENTER para salir...
+pause >nul
+exit
