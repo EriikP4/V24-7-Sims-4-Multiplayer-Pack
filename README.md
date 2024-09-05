@@ -1,7 +1,7 @@
-﻿# WooHoo Updater
+# WooHoo Updater
 **Uso exclusivo de Viciados Hotel**
 
-> Si ya has jugado en la partida anteriormente, salta 
+> Si ya has jugado en la partida anteriormente, salta [aquí](https://github.com/Hotel-Viciados/WooHoo-Updater?tab=readme-ov-file#woohoo-updater--multiplayer)
 
 # ¿Cómo funciona?
 
@@ -14,7 +14,7 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
  - Se agregará una excepción en **Windows Defender** de la carpeta `C:\Users\user\Documents\Electronic Arts` que sería donde se instalaría el WooHoo Updater sin firmar
  - Se mencionará por Discord a la gente que esté jugando en nuestra partida para que actualice los mods
 
-# Tutorial
+# Tutorial de instalación
 
 ## **Requisitos previos**
 
@@ -41,6 +41,26 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
  3. Introduce la licencia que encontrarás en el canal de Discord
  4. Sigue los pasos para finalizar y ejecuta `WooHoo Updater`
  5. **En la consola, lee atentamente todos los pasos, pues es muy importante para que no haya equivocaciones**
+
+# Tutorial para tu Sim (solo para nuevos)
+
+## Crear un Sim
+
+> Esto es una partida de simulación real, tienes que hacerte lo más parecido/a posible, y con rasgos que se asemejen a los tuyos
+
+ 1. Abre The Sims 4 en tu escritorio
+ 2. Selecciona Start Offline
+ 3. Crea una nueva partida, y crea a tu Sim
+ 4. Cuando hayas acabado, guarda tu Sim en la biblioteca
+ 5. Cierra Los Sims (sin guardar)
+
+## Exportar tu Sim
+
+ 1. Ve a tu carpeta de Documentos > Electronic Arts > Los Sims 4
+ 2. Selecciona la carpeta Tray y comprímela
+ 3. Sube el archivo [aquí](https://form.jotform.com/242485937607064)
+
+> Se procesará tu Sim cuando sea posible
 
 # Créditos
 Recursos utilizados en este repositorio
