@@ -2,6 +2,7 @@
 ::
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHLcJ6wvhbZNN
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHPcU71GqcI4otg==
+::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnmoUQMoqerPtiODDd60g40j3OMJg+29WjMIcABpBewDmXg43olJEv3aWI/iVvQb1dl+I9EU5FWI6kWHD7A==
 ::YAwzoRdxOk+EWAjk
 ::fBw5plQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo082OtmUIVt4JKtuWjfm9Ke0ApxGpWIMhwnNKlMoVCQkVThOoZTMyoHxRoluMOc6IjzjuRWCG6QU5GGoU
 ::YAwzuBVtJxjWCl3EqQJgSA==
@@ -28,6 +29,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
+::Zh4grVQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo09+3hmwpcdADb4DU0ruBH/UD7kTwcIRj02Jf+A==
 ::YB416Ek+Zm8=
 ::
 ::
@@ -35,6 +37,8 @@
 @echo off
 chcp 65001>NUL
 setlocal enabledelayedexpansion
+title WooHoo Updater
+mode con:cols=70 lines=15
 IF EXIST "UPDATER_DATA" (
     GOTO UPDATER
 ) ELSE (
@@ -43,25 +47,24 @@ IF EXIST "UPDATER_DATA" (
 
 :INIT
 echo Parece que esta es la primera vez que ejecutas este programa.
-echo ¡¡LEE ATENTAMENTE!!
+echo LEE ATENTAMENTE
 echo Pulsa 1 si es la primera vez que vas a jugar al Multijugador
 echo Pulsa 2 si ya has jugado al menos UNA VEZ al Multijugador
-choice /C SN /N /M "1/2 >"
+choice /C 12 /N /M "Elige una opción >"
 if %ErrorLevel%==1 goto FIRST_TIME
 if %ErrorLevel%==2 goto PWN
 :FIRST_TIME
 cls
-wget --quiet --no-check-certificate "https://raw.githubusercontent.com/EriikP4/WooHoo-Updater/main/first_init/warning.vbs" -O warning.vbs
 start /wait warning.vbs
 echo Descargando librerías...
-wget --quiet --no-check-certificate "https://www.udrop.com/file/MhB2/Full_Pack.7z" -O fullpack.7z
-wget --quiet --no-check-certificate "https://www.udrop.com/file/MhBa/Update_v1.7z" -O update1.7z
-wget --quiet --no-check-certificate "https://www.udrop.com/file/MhBb/Update_v2.7z" -O update2.7z
+wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhB2/Full_Pack.7z" -O fullpack.7z
+wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBa/Update_v1.7z" -O update1.7z
+wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBb/Update_v2.7z" -O update2.7z
 echo Descomprimiendo librerías...
 7za.exe x -y fullpack.7z
 7za.exe x -y update1.7z
 7za.exe x -y update2.7z
-echo v2 > "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
+echo v2> "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 del fullpack.7z
 del update1.7z
 del update2.7z
@@ -75,9 +78,11 @@ cls
 echo Obteniendo versiones...
 set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 set /p version=<%version_path%
-wget --quiet --no-check-certificate "updater url here" -O updater.bat
-wget --quiet --no-check-certificate "version url here" -O version.txt
+wget --quiet --no-check-certificate "https://github.com/EriikP4/WooHoo-Updater/raw/main/updater/%version%/updater.exe" -O updater.exe
+wget --quiet --no-check-certificate "https://raw.githubusercontent.com/EriikP4/WooHoo-Updater/main/updater/data/version.txt" -O version.txt
 echo Actualizador iniciado
 start /wait updater.exe
 del updater.exe
+del version.txt
+del .wget-hsts >nul
 exit

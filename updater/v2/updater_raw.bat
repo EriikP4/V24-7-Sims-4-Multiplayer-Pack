@@ -33,6 +33,8 @@
 ::978f952a14a936cc963da21a135fa983
 @echo off
 chcp 65001>NUL
+mode con:cols=70 lines=15
+title V-24/7 Mod Updater
 echo WooHoo está actualizado.
 echo Pulsa ENTER para salir...
 pause >nul
