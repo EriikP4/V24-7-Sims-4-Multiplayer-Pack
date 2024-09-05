@@ -1,4 +1,4 @@
-# WooHoo Updater
+﻿# WooHoo Updater
 **Uso exclusivo de Viciados Hotel**
 
 > Si ya has jugado en la partida anteriormente, salta [aquí](https://github.com/Hotel-Viciados/WooHoo-Updater?tab=readme-ov-file#woohoo-updater--multiplayer)
@@ -22,26 +22,25 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
 > 
 > Todas las expansiones
 
-## **Fixer**
-
- 1. Descarga" [hamachi_n_woohoo_fix.bat](https://github.com/Hotel-Viciados/WooHoo-Updater/blob/main/first_init/hamachi_n_woohoo_fix.bat)"  (click derecho > Guardar enlace como...)
- 2. Ejecuta `hamachi_n_woohoo_fix.bat` (click derecho > Ejecutar como administrador)
- 3. Sigue los pasos para finalizar
-
 ## **Hamachi**
 
 > Si ya tienes Hamachi, desinstala Hamachi
  - Descarga e instala Hamachi (específicamente esta versión)
 > Se te incluirá en una red cuando sea posible
 
+## **Fixer**
+
+ 1. Descarga "[hamachi_n_woohoo_fix.bat](https://github.com/Hotel-Viciados/WooHoo-Updater/blob/main/first_init/hamachi_n_woohoo_fix.bat)" (entra en el enlace y pulsa a la derecha del todo ⬇️)
+ 2. Ejecuta `hamachi_n_woohoo_fix.bat` (click derecho > Ejecutar como administrador)
+ 3. Sigue los pasos para finalizar
+
 ## **WooHoo Updater + Multiplayer**
 
- 1. Ve al panel de [releases](https://github.com/Hotel-Viciados/WooHoo-Updater/releases)
- 2. Abajo del todo, descarga `WooHoo_Installer_1.x.x.exe`
- 3. Ejecuta `WooHoo_Installer_1.x.x.exe`
- 4. Introduce la licencia que encontrarás en el canal de Discord
- 5. Sigue los pasos para finalizar y ejecuta `WooHoo Updater`
- 6. **En la consola, lee atentamente todos los pasos, pues es muy importante para que no haya equivocaciones**
+ 1. Descarga la última versión desde el panel de releases
+ 2. Ejecuta `WooHoo_Installer.exe`
+ 3. Introduce la licencia que encontrarás en el canal de Discord
+ 4. Sigue los pasos para finalizar y ejecuta `WooHoo Updater`
+ 5. **En la consola, lee atentamente todos los pasos, pues es muy importante para que no haya equivocaciones**
 
 # Tutorial para tu Sim (solo para nuevos)
 
@@ -57,8 +56,8 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
 
 ## Exportar tu Sim
 
- 1. Ve a tu carpeta de Documentos > `Electronic Arts > Los Sims 4`
- 2. Selecciona la carpeta **Tray** y comprímela
+ 1. Ve a tu carpeta de Documentos > Electronic Arts > Los Sims 4
+ 2. Selecciona la carpeta Tray y comprímela
  3. Sube el archivo [aquí](https://form.jotform.com/242485937607064)
 
 > Se procesará tu Sim cuando sea posible
