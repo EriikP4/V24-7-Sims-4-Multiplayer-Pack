@@ -2,9 +2,9 @@
 ::
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHLcJ6wvhbZNN
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHPcU71GqcI4otg==
-::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnmoUQMoqerPtiODDd60g40j3OMJg+29WjMIcABpBewDmXg43olJEv3aWI/iVvQb1dl+I9EU5FWI6kWHD7A==
+::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnmoUQMoqerPs1bumL+9e31XgdIIoxEZckdkfGCRRcBu/Uhg1u2BLuGPLIcWP0w==
 ::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo082OtmUIVt4JKtuWjfm9Ke0ApxGpWIMhwnNKlMoVCQkVThOoZTMyoHxRoluMOc6IjzjuRWCG6QU5GGoU
+::fBw5plQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo082OtmUIVt4Id4Dz1bvDFfAX61HhZ6or32hJjPQFAhJMQiWkYSc7piBLtWvl
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -56,14 +56,15 @@ if %ErrorLevel%==2 goto PWN
 :FIRST_TIME
 cls
 start /wait warning.vbs
+ren "Los Sims 4" "Los Sims 4_gold"
 echo Descargando librerías...
 wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhB2/Full_Pack.7z" -O fullpack.7z
 wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBa/Update_v1.7z" -O update1.7z
 wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBb/Update_v2.7z" -O update2.7z
 echo Descomprimiendo librerías...
-7za.exe x -y fullpack.7z
-7za.exe x -y update1.7z
-7za.exe x -y update2.7z
+7za.exe x -aoa -slt fullpack.7z
+7za.exe x -aoa -slt update1.7z
+7za.exe x -aoa -slt update2.7z
 echo v2> "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 del fullpack.7z
 del update1.7z
