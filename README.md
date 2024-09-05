@@ -36,11 +36,12 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
 
 ## **WooHoo Updater + Multiplayer**
 
- 1. Descarga la última versión desde el panel de releases
- 2. Ejecuta `WooHoo_Installer.exe`
- 3. Introduce la licencia que encontrarás en el canal de Discord
- 4. Sigue los pasos para finalizar y ejecuta `WooHoo Updater`
- 5. **En la consola, lee atentamente todos los pasos, pues es muy importante para que no haya equivocaciones**
+ 1. Ve al panel de [releases](https://github.com/Hotel-Viciados/WooHoo-Updater/releases)
+ 2. Abajo del todo, descarga `WooHoo_Installer_1.x.x.exe`
+ 3. Ejecuta `WooHoo_Installer_1.x.x.exe`
+ 4. Introduce la licencia que encontrarás en el canal de Discord
+ 5. Sigue los pasos para finalizar y ejecuta `WooHoo Updater`
+ 6. **En la consola, lee atentamente todos los pasos, pues es muy importante para que no haya equivocaciones**
 
 # Tutorial para tu Sim (solo para nuevos)
 
@@ -56,8 +57,8 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
 
 ## Exportar tu Sim
 
- 1. Ve a tu carpeta de Documentos > Electronic Arts > Los Sims 4
- 2. Selecciona la carpeta Tray y comprímela
+ 1. Ve a tu carpeta de Documentos > `Electronic Arts > Los Sims 4`
+ 2. Selecciona la carpeta **Tray** y comprímela
  3. Sube el archivo [aquí](https://form.jotform.com/242485937607064)
 
 > Se procesará tu Sim cuando sea posible
