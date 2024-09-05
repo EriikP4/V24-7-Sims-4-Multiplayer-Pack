@@ -48,8 +48,8 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
 
 > Esto es una partida de simulación real, tienes que hacerte lo más parecido/a posible, y con rasgos que se asemejen a los tuyos
 
- 1. Abre The Sims 4 en tu escritorio
- 2. Selecciona Start Offline
+ 1. Abre **The Sims 4** en tu escritorio
+ 2. Selecciona `Start Offline`
  3. Crea una nueva partida, y crea a tu Sim
  4. Cuando hayas acabado, guarda tu Sim en la biblioteca
  5. Cierra Los Sims (sin guardar)
