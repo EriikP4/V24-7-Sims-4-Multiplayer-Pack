@@ -1,4 +1,4 @@
-mode con:cols=40 lines=40
+mode con:cols=40 lines=15
 @echo off
 echo Agregando regla de Firewall para Hamachi...
 netsh advfirewall firewall add rule name="HAMACHI FIX" dir=out program="C:\Program Files (x86)\LogMeIn Hamachi\hamachi-2-ui.exe" profile=any action=allow
