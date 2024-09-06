@@ -29,7 +29,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo09+3hmwpcdADb4DU0ruBH/UD7kTwcIRj02Jf+A==
+::Zh4grVQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo09+3hmwpcdADS6rv74TOCc4nz3fKVLoRwXVVkMQDMw5IehO/ax16rHZH1g==
 ::YB416Ek+Zm8=
 ::
 ::
@@ -58,9 +58,9 @@ cls
 start /wait warning.vbs
 ren "Los Sims 4" "Los Sims 4_gold"
 echo Descargando librerías...
-wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhB2/Full_Pack.7z" -O fullpack.7z
-wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBa/Update_v1.7z" -O update1.7z
-wget --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBb/Update_v2.7z" -O update2.7z
+wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhB2/Full_Pack.7z" -O fullpack.7z
+wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBa/Update_v1.7z" -O update1.7z
+wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBb/Update_v2.7z" -O update2.7z
 echo Descomprimiendo librerías...
 7za.exe x -aoa -slt fullpack.7z
 7za.exe x -aoa -slt update1.7z
@@ -73,14 +73,15 @@ goto PWN
 :PWN
 cls
 echo ESTE ARCHIVO ES NECESARIO PARA QUE EL ACTUALIZADOR DETECTE QUE LO HAS INICIADO ALGUNA VEZ, NO ELIMINAR O PODRÍAS PERDER TODOS TUS ARCHIVOS DE LOS SIMS 4 > UPDATER_DATA
+echo v2> "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 goto UPDATER
 :UPDATER
 cls
 echo Obteniendo versiones...
 set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 set /p version=<%version_path%
-wget --quiet --no-check-certificate "https://github.com/EriikP4/WooHoo-Updater/raw/main/updater/%version%/updater.exe" -O updater.exe
-wget --quiet --no-check-certificate "https://raw.githubusercontent.com/EriikP4/WooHoo-Updater/main/updater/data/version.txt" -O version.txt
+wget --quiet --no-check-certificate "https://github.com/Hotel-Viciados/WooHoo-Updater/raw/main/updater/%version%/updater.exe" -O updater.exe
+wget --quiet --no-check-certificate "https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/updater/data/version.txt" -O version.txt
 echo Actualizador iniciado
 start /wait updater.exe
 del updater.exe
