@@ -1,7 +1,7 @@
 ﻿# WooHoo Updater
 **Uso exclusivo de Viciados Hotel**
 
-> Si ya has jugado en la partida anteriormente, salta [aquí](https://github.com/Hotel-Viciados/WooHoo-Updater?tab=readme-ov-file#woohoo-updater--multiplayer)
+> Si ya has jugado en la partida anteriormente, salta [aquí](https://github.com/Hotel-Viciados/WooHoo-Updater?tab=readme-ov-file#fixer)
 
 # ¿Cómo funciona?
 
