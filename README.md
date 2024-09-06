@@ -1,9 +1,16 @@
-# WooHoo Updater
+﻿# WooHoo Updater
 **Uso exclusivo de Viciados Hotel**
 
-> Si ya has jugado en la partida anteriormente, salta [aquí](https://github.com/Hotel-Viciados/WooHoo-Updater?tab=readme-ov-file#fixer)
+> Si ya has jugado en la partida anteriormente, salta [aquí](https://github.com/Hotel-Viciados/WooHoo-Updater?tab=readme-ov-file#woohoo-updater--multiplayer)
 
 # ¿Cómo funciona?
+
+```mermaid
+graph LR
+wh[WooHoo Updater] -- Lee version.txt --> ver(%version%)
+ver --> ver_upd(Versión actual) -->  dont_download(No se descarga nada)
+ver  -->  new_ver(Nueva versión disponible)  -->  down(Descarga updater.exe)  -->  updater(Updater se ejecuta)  -->  unzip_mods(Descarga y gestiona mods)  -->  new_ver.txt(Cambia version.txt)
+```
 
 He intentado prepararlo todo para que sea lo más fácil posible, pero no todo es perfecto y tiene sus inconvenientes
 
@@ -33,7 +40,6 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
  1. Descarga "[hamachi_n_woohoo_fix.bat](https://github.com/Hotel-Viciados/WooHoo-Updater/blob/main/first_init/hamachi_n_woohoo_fix.bat)"
  2. Ejecuta `hamachi_n_woohoo_fix.bat` como administrador 🛡️
  3. Sigue los pasos para finalizar
-
 ![tutorial](https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/first_init/fix.gif)
 
 ## **WooHoo Updater + Multiplayer**
