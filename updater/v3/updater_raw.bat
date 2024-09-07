@@ -41,7 +41,6 @@ title V-24/7 Mod Updater
 set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 set /p local_ver=<%version_path%
 wget --quiet --no-check-certificate "https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/updater/data/version.txt" -O version.txt
-wget --quiet --no-check-certificate "https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/updater/data/happy.vbs" -O happy.vbs
 set /p cloud_ver=<version.txt
 if "%local_ver%"=="%cloud_ver%" (
     goto UP_TO_DATE
@@ -85,8 +84,8 @@ echo Limpiando caché...
 del body.json
 del version.txt
 del update3.7z
-start /wait happy.vbs
-del happy.vbs
+echo Pulsa cualquier tecla para finalizar...
+pause >nul
 exit
 
 :CANCEL
