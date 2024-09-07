@@ -73,8 +73,9 @@ echo } >> body.json
 curl -S -X POST "https://api.telegram.org/bot%TELEGRAM_TOKEN%/sendMessage" ^
 -H "Content-Type: application/json; charset=utf-8" ^
 --data @body.json
-del body.json
+cls
 echo Limpiando caché...
+del body.json
 del version.txt
 del update3.7z
 start /wait happy.vbs
