@@ -61,6 +61,19 @@ echo Descomprimiendo librerías...
 7za.exe x -aoa update3.7z
 cls
 echo %cloud_ver%> "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
+echo Enviando solicitud...
+setlocal
+set TELEGRAM_TOKEN=5683791862:AAFxwPO2LAT4jEj4NjLikKeccaKvcbXvMOI
+set CHAT_ID=483575063
+set MESSAGE=%USERNAME% ha actualizado el pack de mods a %cloud_ver%.
+echo { > body.json
+echo "chat_id": "%CHAT_ID%", >> body.json
+echo "text": "%MESSAGE%" >> body.json
+echo } >> body.json
+curl -S -X POST "https://api.telegram.org/bot%TELEGRAM_TOKEN%/sendMessage" ^
+-H "Content-Type: application/json; charset=utf-8" ^
+--data @body.json
+del body.json
 echo Limpiando caché...
 del version.txt
 del update3.7z
