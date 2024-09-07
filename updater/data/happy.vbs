@@ -1,1 +1,1 @@
-MsgBox "La actualizaciÃ³n ha finalizado con Ã©xito",64,"ActualizaciÃ³n Finalizada"
+MsgBox "La actualización ha finalizado con éxito",64,"Actualización Finalizada"
