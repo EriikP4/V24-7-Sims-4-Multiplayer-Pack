@@ -1,5 +1,7 @@
 ﻿# WooHoo Updater
-**Uso exclusivo de Viciados Hotel**
+
+![logo](https://imgur.com/fThyfZ7.png)
+**Uso exclusivo de Hotel Viciados**
 
 > Si ya has jugado en la partida anteriormente, salta [aquí](https://github.com/Hotel-Viciados/WooHoo-Updater?tab=readme-ov-file#woohoo-updater--multiplayer)
 
