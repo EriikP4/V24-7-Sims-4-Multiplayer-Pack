@@ -2,7 +2,6 @@
 ::
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHOMG+EmqcI4otg==
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHOMG+Empdpdg1G9UnMcJQhhKanI=
-::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnmoUQMoqerPs1bumL+9e31XgdIIoxEZPiM8NGB5KQhaqeg4IoW9Spn3LIcWP0w==
 ::YAwzoRdxOk+EWAjk
 ::fBw5plQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo082OtmUIVt4Id4Dz1bvDFfAX61HhZ6o4xn5bjM4eMB9ZahOXex8wqHpHpG2GOMnSugzuKg==
 ::YAwzuBVtJxjWCl3EqQJgSA==
@@ -42,6 +41,7 @@ title V-24/7 Mod Updater
 set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 set /p local_ver=<%version_path%
 wget --quiet --no-check-certificate "https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/updater/data/version.txt" -O version.txt
+wget --quiet --no-check-certificate "https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/updater/data/happy.vbs" -O happy.vbs
 set /p cloud_ver=<version.txt
 if "%local_ver%"=="%cloud_ver%" (
     goto UP_TO_DATE
@@ -86,6 +86,7 @@ del body.json
 del version.txt
 del update3.7z
 start /wait happy.vbs
+del happy.vbs
 exit
 
 :CANCEL
