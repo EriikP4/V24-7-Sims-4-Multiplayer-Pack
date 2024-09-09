@@ -1,8 +1,8 @@
 ::[Bat To Exe Converter]
 ::
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHLcJ6wvhbZNN
+::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHPcS+Evte5FjwHhJ+A==
 ::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHPcU71GqcI4otg==
-::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnmoUQMoqerPs1bumL+9e31XgdIIoxEZckdkfGCRRcBu/Uhg1u2BLuGPLIcWP0w==
 ::YAwzoRdxOk+EWAjk
 ::fBw5plQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo082OtmUIVt4Id4Dz1bvDFfAX61HhZ6or32hJjPQFAhJMQiWkYSc7piBLtWvl
 ::YAwzuBVtJxjWCl3EqQJgSA==
@@ -17,12 +17,12 @@
 ::dAsiuh18IRvcCxnZtBJQ
 ::cRYluBh/LU+EWAnk
 ::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJhZkkaH0rTXA==
-::ZQ05rAF9IBncCkqN+0xwdVsFAlDMbiXpZg==
-::ZQ05rAF9IAHYFVzEqQIHJxR8QwvCEWq0B7IZ+og=
-::eg0/rx1wNQPfEVWB+kM9LVsJDBONM2O1CYoJ+Oz6+++Vwg==
-::fBEirQZwNQPfEVWB+kM9LVsJDBLQaDyFC7oY+On45NWSskkcQOctGA==
-::cRolqwZ3JBvQF1fEqQIRKw9BTQiLJmq+Cadc7O274uWDsQ0SUus8cY7XmrCLYNZeuBGrIvY=
+::cxY6rQJ7JhzQF1fEqQJiZksaHErSXA==
+::ZQ05rAF9IBncCkqN+0xwdVs0
+::ZQ05rAF9IAHYFVzEqQIHJxR8QwvCCXu+B6EZ+og=
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQJQ
 ::dhA7uBVwLU+EWHGL4Ec8aC1dTw2DOGSpZg==
 ::YQ03rBFzNR3SWATElA==
 ::dhAmsQZ3MwfNWATElA==
@@ -62,10 +62,10 @@ wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/f
 wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBa/Update_v1.7z" -O update1.7z
 wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/MhBb/Update_v2.7z" -O update2.7z
 echo Descomprimiendo librerías...
+7za.exe x -aoa -slt icons.7z
 7za.exe x -aoa -slt fullpack.7z
 7za.exe x -aoa -slt update1.7z
 7za.exe x -aoa -slt update2.7z
-echo v2> "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 del fullpack.7z
 del update1.7z
 del update2.7z
@@ -74,17 +74,14 @@ goto PWN
 cls
 echo ESTE ARCHIVO ES NECESARIO PARA QUE EL ACTUALIZADOR DETECTE QUE LO HAS INICIADO ALGUNA VEZ, NO ELIMINAR O PODRÍAS PERDER TODOS TUS ARCHIVOS DE LOS SIMS 4 > UPDATER_DATA
 echo v2> "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
+del icons.7z
 goto UPDATER
 :UPDATER
 cls
-echo Obteniendo versiones...
-set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
-set /p version=<%version_path%
-wget --quiet --no-check-certificate "https://github.com/Hotel-Viciados/WooHoo-Updater/raw/main/updater/%version%/updater.exe" -O updater.exe
-wget --quiet --no-check-certificate "https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/updater/data/version.txt" -O version.txt
+echo Obteniendo datos...
+wget --quiet --no-check-certificate "https://github.com/Hotel-Viciados/WooHoo-Updater/raw/main/updater/latest/updater.exe" -O updater.exe
 echo Actualizador iniciado
 start /wait updater.exe
 del updater.exe
-del version.txt
 del .wget-hsts >nul
 exit

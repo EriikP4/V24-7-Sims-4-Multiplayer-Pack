@@ -37,7 +37,7 @@
 setlocal
 chcp 65001>NUL
 mode con:cols=70 lines=15
-title V-24/7 Mod Updater
+title V-24/7 Mod Updater b7163
 set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 set /p local_ver=<%version_path%
 wget --quiet --no-check-certificate "https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/updater/data/cloud_version.txt" -O version.txt
@@ -86,6 +86,10 @@ del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\[QMB]Se
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\[QMB]SelfCareMod_HairRemoval.package"
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\[QMB]SelfCareMod_SunProtection.package"
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\[QMB]Tweak_AcneforAdults.package"
+del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\NickyClem_InsuranceCompanyComperMenu.package"
+del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\NickyClem_InsuranceCompanyPhone AppMenu.package"
+del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\1_TRADUCCIONES\1_NickyClem_HouseInsurace_08_24_SPA_ES_RoshySims.package"
+del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\1_TRADUCCIONES\1_QMBiBi_Mod_SelfCare_v2_SPA_ES_RoshySims.package"
 :unzip
 echo Descomprimiendo librerías...
 7za.exe x -aoa update3.7z
