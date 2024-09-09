@@ -76,8 +76,11 @@ exit
 
 :v3
 wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/Mj03/Update_v3.7z" -O update3.7z
+7za.exe x -aoa update3.7z
+del update3.7z
 :v4
-wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/Mk58/Update_v4.7z" -O update4.7z
+wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/Mk5g/Update_v4.7z" -O update4.7z
+7za.exe x -aoa update4.7z
 rmdir /s /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\BASEMENTAL DRUGS"
 rmdir /s /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\Objects"
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\!QMBiBi_SelfCareMod_Main.package"
@@ -90,11 +93,6 @@ del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\NickyCl
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\NickyClem_InsuranceCompanyPhone AppMenu.package"
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\1_TRADUCCIONES\1_NickyClem_HouseInsurace_08_24_SPA_ES_RoshySims.package"
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\1_TRADUCCIONES\1_QMBiBi_Mod_SelfCare_v2_SPA_ES_RoshySims.package"
-:unzip
-echo Descomprimiendo librerías...
-7za.exe x -aoa update3.7z
-7za.exe x -aoa update4.7z
-del update3.7z
 del update4.7z
 
 :finish_update
