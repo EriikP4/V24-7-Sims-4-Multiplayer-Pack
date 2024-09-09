@@ -1,39 +1,3 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHLcJ6wvhbZNN
-::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHPcS+Evte5FjwHhJ+A==
-::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHPcU71GqcI4otg==
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo082OtmUIVt4Id4Dz1bvDFfAX61HhZ6or32hJjPQFAhJMQiWkYSc7piBLtWvl
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpSI=
-::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJiZksaHWQ=
-::ZQ05rAF9IBncCkqN+0xwdVs0
-::ZQ05rAF9IAHYFVzEqQIHJxR8QwvCCXu+B6EZ+og=
-::eg0/rx1wNQPfEVWB+kM9LVsJDBONM2O1CYoJ+Oz6+++Vwg==
-::fBEirQZwNQPfEVWB+kM9LVsJDBONM2O1CYoO6f+b
-::cRolqwZ3JBvQF1fEqQIRKw9BTQiLJmq+Cadc7O27wuWDskweX6I7fc/v6eDu
-::dhA7uBVwLU+EWHGL4Ec8aC1dTw2DOGSpZg==
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo09+3hmwpcdADS6rv74TOCc4nz3fKVLoRwXVVkMQDMw5IehO/ax16rHZH1g==
-::YB416Ek+Zm8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 @echo off
 chcp 65001>NUL
 setlocal enabledelayedexpansion
@@ -105,6 +69,7 @@ cls
 echo ESTE ARCHIVO ES NECESARIO PARA QUE EL ACTUALIZADOR DETECTE QUE LO HAS INICIADO ALGUNA VEZ, NO ELIMINAR O PODRÍAS PERDER TODOS TUS ARCHIVOS DE LOS SIMS 4 > UPDATER_DATA
 echo v2> "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 del icons.7z
+del installer.exe
 goto UPDATER
 :UPDATER
 cls
