@@ -37,7 +37,7 @@
 setlocal
 chcp 65001>NUL
 mode con:cols=70 lines=15
-title V-24/7 Mod Updater b7163
+title V-24/7 Mod Updater a3415
 set version_path="%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
 set /p local_ver=<%version_path%
 wget --quiet --no-check-certificate "https://raw.githubusercontent.com/Hotel-Viciados/WooHoo-Updater/main/updater/data/cloud_version.txt" -O version.txt
@@ -80,7 +80,6 @@ wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/f
 del update3.7z
 :v4
 wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/Mk5g/Update_v4.7z" -O update4.7z
-7za.exe x -aoa update4.7z
 rmdir /s /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\BASEMENTAL DRUGS"
 rmdir /s /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\Objects"
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\!QMBiBi_SelfCareMod_Main.package"
@@ -93,6 +92,7 @@ del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\NickyCl
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\NickyClem_InsuranceCompanyPhone AppMenu.package"
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\1_TRADUCCIONES\1_NickyClem_HouseInsurace_08_24_SPA_ES_RoshySims.package"
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\1_TRADUCCIONES\1_QMBiBi_Mod_SelfCare_v2_SPA_ES_RoshySims.package"
+7za.exe x -aoa update4.7z
 del update4.7z
 
 :finish_update
