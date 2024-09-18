@@ -46,8 +46,8 @@ He intentado prepararlo todo para que sea lo más fácil posible, pero no todo e
 
 ## **WooHoo Updater + Multiplayer**
 
- 1. Descarga la última versión desde el panel de [releases](https://github.com/Hotel-Viciados/WooHoo-Updater/releases) (abajo del todo selecciona `WooHoo_Installer_1.0.0.exe`)
- 2. Ejecuta `WooHoo_Installer_1.0.0.exe`
+ 1. Descarga la última versión desde el panel de [releases](https://github.com/Hotel-Viciados/WooHoo-Updater/releases) (abajo del todo selecciona `WooHoo_Installer_2.0.0.exe`)
+ 2. Ejecuta `WooHoo_Installer_2.0.0.exe`
  3. Sigue los pasos para finalizar y ejecuta `WooHoo Updater`
  4. **En la consola, lee atentamente todos los pasos, pues es muy importante para que no haya equivocaciones**
 
