@@ -1,38 +1,3 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHOMG+EmqcI4otg==
-::fBE1pAF6MU+EWHreyHcjLQlHcCGQNWCGIrof/eX+4f6UnngtcMMLXb3nwL2eHOMG+Empdpdg1G9UnMcJQhhKanI=
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo082OtmUIVt4Id4Dz1bvDFfAX61HhZ6o4xn5bjM4eMB9ZahOXex8wqHpHpG2GOMnSugzuKg==
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpSI=
-::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+JeA==
-::cxY6rQJ7JhzQF1fEqQJQ
-::ZQ05rAF9IBncCkqN+0xwdVs0
-::ZQ05rAF9IAHYFVzEqQJQ
-::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
-::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
-::cRolqwZ3JBvQF1fEqQJQ
-::dhA7uBVwLU+EWDk=
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5GRQ++GGS5E7gZ5vzo082OtmUIVt4Id4Dz1bvDFfAX61HhZ6o4xn5bjM4eMBdZahe4ejMhuWpDomGXecKEtm8=
-::YB416Ek+Zm8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 @echo off
 setlocal
 chcp 65001>NUL
@@ -69,6 +34,9 @@ if "%local_ver%"=="v2" (
 if "%local_ver%"=="v3" (
     goto v4
 )
+if "%local_ver%"=="v4" (
+    goto v5
+)
 echo ERROR 404: VERSION_NOT_FOUND
 echo No se ha encontrado la versión.
 pause
@@ -94,6 +62,9 @@ del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\1_TRADU
 del /f /q "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\Mods\OTROS\1_TRADUCCIONES\1_QMBiBi_Mod_SelfCare_v2_SPA_ES_RoshySims.package"
 7za.exe x -aoa update4.7z
 del update4.7z
+:v5
+wget.exe --quiet --show-progress --no-check-certificate "https://www.udrop.com/file/Mp5W/Update_v5.7z" -O update5.7z
+7za.exe x -aoa update5.7z
 
 :finish_update
 echo %cloud_ver%> "%USERPROFILE%\Documents\Electronic Arts\Los Sims 4\mod_version.txt"
